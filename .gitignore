@@ -46,3 +46,4 @@ playground.xcworkspace
 
 # Mac OS
 .DS_Store
+*.dmg
