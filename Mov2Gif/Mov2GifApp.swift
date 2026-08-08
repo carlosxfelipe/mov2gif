@@ -13,5 +13,7 @@ struct Mov2GifApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.contentSize)
+        .defaultSize(width: 440, height: 560)
     }
 }
