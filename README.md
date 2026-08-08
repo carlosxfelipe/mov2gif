@@ -1,5 +1,7 @@
 # Mov2Gif
 
+![Mov2Gif Preview](assets/preview.png)
+
 A native macOS application designed to convert .mov video files into .gif animated images quickly and easily. Built entirely with Swift and SwiftUI, ensuring maximum performance and complete integration with the macOS ecosystem.
 
 ## Features
@@ -14,6 +16,14 @@ A native macOS application designed to convert .mov video files into .gif animat
 
 - macOS 12.0 or later (or the minimum deployment target specified in the project)
 - Xcode (for building from source)
+
+## Installation
+
+You can easily install Mov2Gif using Homebrew:
+
+```bash
+brew install --cask carlosxfelipe/tap/mov2gif
+```
 
 ## Building the Project
 
