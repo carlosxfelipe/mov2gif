@@ -22,17 +22,17 @@ struct DropZoneView: View {
                 .foregroundStyle(isTargeted ? Color.accentColor : .secondary)
                 .symbolEffect(.pulse, options: .repeating, isActive: isTargeted)
 
-            Text("Arraste um vídeo .mov aqui")
+            Text("Drag a .mov video here")
                 .font(.title3)
                 .fontWeight(.medium)
                 .foregroundStyle(isTargeted ? Color.accentColor : .primary)
 
-            Text("ou")
+            Text("or")
                 .font(.caption)
                 .foregroundStyle(.tertiary)
 
             Button(action: onPickFile) {
-                Label("Selecionar Arquivo", systemImage: "folder")
+                Label("Select File", systemImage: "folder")
                     .font(.body)
             }
             .buttonStyle(.borderedProminent)

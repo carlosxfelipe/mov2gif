@@ -59,8 +59,8 @@ final class ConverterViewModel {
     /// Opens an NSOpenPanel for the user to select a .mov file.
     func openFilePicker() {
         let panel = NSOpenPanel()
-        panel.title = "Selecionar Vídeo"
-        panel.prompt = "Selecionar"
+        panel.title = String(localized: "Select Video")
+        panel.prompt = String(localized: "Select")
         panel.allowedContentTypes = [UTType.movie]
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
@@ -130,14 +130,14 @@ final class ConverterViewModel {
 
         state = .converting
         progress = 0.0
-        statusText = "Extraindo frames..."
+        statusText = String(localized: "Extracting frames...")
         isCancelled = false
 
         Task {
             // Ask the user where to save via NSSavePanel
             let savePanel = NSSavePanel()
-            savePanel.title = "Salvar GIF"
-            savePanel.prompt = "Salvar"
+            savePanel.title = String(localized: "Save GIF")
+            savePanel.prompt = String(localized: "Save")
             savePanel.allowedContentTypes = [UTType.gif]
             savePanel.nameFieldStringValue = videoFileName
                 .replacingOccurrences(of: ".mov", with: ".gif")
@@ -157,9 +157,9 @@ final class ConverterViewModel {
                         Task { @MainActor in
                             self?.progress = progressValue
                             if progressValue < 0.8 {
-                                self?.statusText = "Extraindo frames..."
+                                self?.statusText = String(localized: "Extracting frames...")
                             } else {
-                                self?.statusText = "Gerando GIF..."
+                                self?.statusText = String(localized: "Generating GIF...")
                             }
                         }
                     },
@@ -169,10 +169,10 @@ final class ConverterViewModel {
                 )
 
                 state = .done
-                statusText = "Conversão concluída!"
+                statusText = String(localized: "Conversion complete!")
             } catch {
                 state = .error(error.localizedDescription)
-                statusText = "Erro: \(error.localizedDescription)"
+                statusText = String(localized: "Error: \(error.localizedDescription)")
             }
         }
     }

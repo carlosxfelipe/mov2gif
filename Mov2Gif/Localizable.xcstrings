@@ -1,0 +1,360 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld%%" : {
+
+    },
+    "🇧🇷  Português" : {
+
+    },
+    "🇺🇸  English" : {
+
+    },
+    "About Mov2Gif" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o Mov2Gif"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
+    "Carlos Felipe Araújo" : {
+
+    },
+    "Choose another video" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher outro vídeo"
+          }
+        }
+      }
+    },
+    "Conversion cancelled." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conversão cancelada."
+          }
+        }
+      }
+    },
+    "Conversion complete!" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conversão concluída!"
+          }
+        }
+      }
+    },
+    "Conversion error" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erro na conversão"
+          }
+        }
+      }
+    },
+    "Convert another video" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Converter outro vídeo"
+          }
+        }
+      }
+    },
+    "Convert to GIF" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Converter para GIF"
+          }
+        }
+      }
+    },
+    "Could not create the destination GIF file." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível criar o arquivo GIF de destino."
+          }
+        }
+      }
+    },
+    "Could not load the video." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar o vídeo."
+          }
+        }
+      }
+    },
+    "Could not read the video track from the file." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível ler a faixa de vídeo do arquivo."
+          }
+        }
+      }
+    },
+    "Developed by" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenvolvido por"
+          }
+        }
+      }
+    },
+    "Drag a .mov video here" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arraste um vídeo .mov aqui"
+          }
+        }
+      }
+    },
+    "Error: %@" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erro: %@"
+          }
+        }
+      }
+    },
+    "Extracting frames..." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extraindo frames..."
+          }
+        }
+      }
+    },
+    "Failed to extract frames from the video." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao extrair frames do vídeo."
+          }
+        }
+      }
+    },
+    "FPS" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FPS"
+          }
+        }
+      }
+    },
+    "Generating GIF..." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerando GIF..."
+          }
+        }
+      }
+    },
+    "GIF created successfully!" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GIF criado com sucesso!"
+          }
+        }
+      }
+    },
+    "github.com/carlosxfelipe" : {
+
+    },
+    "Infinite Loop" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loop Infinito"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma"
+          }
+        }
+      }
+    },
+    "Mov2Gif" : {
+      "shouldTranslate" : false
+    },
+    "No frames were extracted from the video." : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum frame foi extraído do vídeo."
+          }
+        }
+      }
+    },
+    "or" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ou"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
+          }
+        }
+      }
+    },
+    "Save GIF" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar GIF"
+          }
+        }
+      }
+    },
+    "Scale" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escala"
+          }
+        }
+      }
+    },
+    "Select" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionar"
+          }
+        }
+      }
+    },
+    "Select File" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionar Arquivo"
+          }
+        }
+      }
+    },
+    "Select Video" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecionar Vídeo"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurações"
+          }
+        }
+      }
+    },
+    "System Default" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão do Sistema"
+          }
+        }
+      }
+    },
+    "Try again" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentar novamente"
+          }
+        }
+      }
+    },
+    "Version 1.0" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão 1.0"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

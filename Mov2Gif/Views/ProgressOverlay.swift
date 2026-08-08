@@ -45,7 +45,7 @@ struct ProgressOverlay: View {
                 .foregroundStyle(.secondary)
 
             Button(action: onCancel) {
-                Text("Cancelar")
+                Text("Cancel")
                     .font(.subheadline)
             }
             .buttonStyle(.plain)

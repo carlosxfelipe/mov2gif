@@ -71,7 +71,7 @@ struct ContentView: View {
                     Button(action: {
                         viewModel.startConversion()
                     }) {
-                        Label("Converter para GIF", systemImage: "wand.and.stars")
+                        Label("Convert to GIF", systemImage: "wand.and.stars")
                             .font(.body)
                             .fontWeight(.medium)
                             .frame(maxWidth: .infinity)
@@ -83,7 +83,7 @@ struct ContentView: View {
                     Button(action: {
                         viewModel.reset()
                     }) {
-                        Text("Escolher outro vídeo")
+                        Text("Choose another video")
                             .font(.subheadline)
                     }
                     .buttonStyle(.plain)
@@ -129,7 +129,7 @@ struct ContentView: View {
                     .foregroundStyle(.green)
                     .symbolEffect(.bounce, options: .nonRepeating)
 
-                Text("GIF criado com sucesso!")
+                Text("GIF created successfully!")
                     .font(.title3)
                     .fontWeight(.medium)
 
@@ -142,7 +142,7 @@ struct ContentView: View {
                 Button(action: {
                     viewModel.reset()
                 }) {
-                    Label("Converter outro vídeo", systemImage: "arrow.counterclockwise")
+                    Label("Convert another video", systemImage: "arrow.counterclockwise")
                         .font(.body)
                 }
                 .buttonStyle(.borderedProminent)
@@ -167,7 +167,7 @@ struct ContentView: View {
                     .font(.system(size: 48))
                     .foregroundStyle(.orange)
 
-                Text("Erro na conversão")
+                Text("Conversion error")
                     .font(.title3)
                     .fontWeight(.medium)
 
@@ -180,7 +180,7 @@ struct ContentView: View {
                 Button(action: {
                     viewModel.state = .videoLoaded
                 }) {
-                    Text("Tentar novamente")
+                    Text("Try again")
                         .font(.body)
                 }
                 .buttonStyle(.borderedProminent)
@@ -190,7 +190,7 @@ struct ContentView: View {
                 Button(action: {
                     viewModel.reset()
                 }) {
-                    Text("Escolher outro vídeo")
+                    Text("Choose another video")
                         .font(.subheadline)
                 }
                 .buttonStyle(.plain)

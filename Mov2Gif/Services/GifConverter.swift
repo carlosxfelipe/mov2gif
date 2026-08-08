@@ -25,17 +25,17 @@ enum GifConverter {
         var errorDescription: String? {
             switch self {
             case .cannotLoadAsset:
-                return "Não foi possível carregar o vídeo."
+                return String(localized: "Could not load the video.")
             case .cannotReadVideoTrack:
-                return "Não foi possível ler a faixa de vídeo do arquivo."
+                return String(localized: "Could not read the video track from the file.")
             case .cannotCreateImageDestination:
-                return "Não foi possível criar o arquivo GIF de destino."
+                return String(localized: "Could not create the destination GIF file.")
             case .frameExtractionFailed:
-                return "Falha ao extrair frames do vídeo."
+                return String(localized: "Failed to extract frames from the video.")
             case .noFramesExtracted:
-                return "Nenhum frame foi extraído do vídeo."
+                return String(localized: "No frames were extracted from the video.")
             case .cancelled:
-                return "Conversão cancelada."
+                return String(localized: "Conversion cancelled.")
             }
         }
     }

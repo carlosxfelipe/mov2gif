@@ -13,7 +13,7 @@ struct SettingsPanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Configurações")
+            Text("Settings")
                 .font(.headline)
                 .foregroundStyle(.primary)
 
@@ -44,7 +44,7 @@ struct SettingsPanel: View {
             // Scale Slider
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    Text("Escala")
+                    Text("Scale")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                     Spacer()
@@ -64,7 +64,7 @@ struct SettingsPanel: View {
 
             // Loop Toggle
             HStack {
-                Text("Loop Infinito")
+                Text("Infinite Loop")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                 Spacer()
