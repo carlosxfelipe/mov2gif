@@ -1,7 +1,6 @@
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Bright nordic sky background (Thor / thunder) -->
-    <!-- AS REQUESTED: Background color is completely untouched -->
+    <!-- Main background linear gradient -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%"   style="stop-color:#7dbef0;stop-opacity:1"/>
       <stop offset="55%"  style="stop-color:#3b82f6;stop-opacity:1"/>

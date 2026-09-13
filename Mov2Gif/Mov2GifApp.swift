@@ -19,7 +19,8 @@ struct Mov2GifApp: App {
         .defaultSize(width: 440, height: 560)
         .commands {
             CommandGroup(replacing: .appInfo) {
-                Button("About Mov2Gif") {
+                let aboutTitle = Locale.current.language.languageCode?.identifier == "pt" ? "Sobre" : "About"
+                Button(aboutTitle) {
                     if let aboutWindow = NSApplication.shared.windows.first(where: {
                         $0.identifier?.rawValue == "about"
                     }) {
@@ -28,7 +29,7 @@ struct Mov2GifApp: App {
                         let controller = NSHostingController(rootView: AboutView())
                         let window = NSWindow(contentViewController: controller)
                         window.identifier = NSUserInterfaceItemIdentifier("about")
-                        window.title = String(localized: "About Mov2Gif")
+                        window.title = aboutTitle
                         window.styleMask = [.titled, .closable]
                         window.center()
                         window.makeKeyAndOrderFront(nil)

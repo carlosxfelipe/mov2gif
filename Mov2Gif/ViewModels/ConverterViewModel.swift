@@ -51,8 +51,8 @@ final class ConverterViewModel {
     /// Status text shown during conversion.
     var statusText: String = ""
 
-    /// Whether conversion has been cancelled.
-    private var isCancelled = false
+    /// The current conversion task.
+    private var conversionTask: Task<Void, Never>?
 
     // MARK: - Video Loading
 
@@ -72,7 +72,7 @@ final class ConverterViewModel {
     /// Loads a video from a URL (from drag & drop or file picker).
     func loadVideo(from url: URL) {
         // Start accessing the security-scoped resource for sandboxed access
-        let didStart = url.startAccessingSecurityScopedResource()
+        _ = url.startAccessingSecurityScopedResource()
 
         videoURL = url
         videoFileName = url.lastPathComponent
@@ -108,6 +108,7 @@ final class ConverterViewModel {
         guard let provider = providers.first else { return false }
 
         provider.loadItem(forTypeIdentifier: UTType.fileURL.identifier, options: nil) { [weak self] item, _ in
+            guard let self = self else { return }
             guard let data = item as? Data,
                   let url = URL(dataRepresentation: data, relativeTo: nil),
                   url.pathExtension.lowercased() == "mov"
@@ -116,7 +117,7 @@ final class ConverterViewModel {
             }
 
             Task { @MainActor in
-                self?.loadVideo(from: url)
+                self.loadVideo(from: url)
             }
         }
         return true
@@ -131,9 +132,8 @@ final class ConverterViewModel {
         state = .converting
         progress = 0.0
         statusText = String(localized: "Extracting frames...")
-        isCancelled = false
 
-        Task {
+        conversionTask = Task {
             // Ask the user where to save via NSSavePanel
             let savePanel = NSSavePanel()
             savePanel.title = String(localized: "Save GIF")
@@ -154,17 +154,18 @@ final class ConverterViewModel {
                     destinationURL: destinationURL,
                     settings: settings,
                     progressHandler: { [weak self] progressValue in
+                        guard let self = self else { return }
                         Task { @MainActor in
-                            self?.progress = progressValue
+                            self.progress = progressValue
                             if progressValue < 0.8 {
-                                self?.statusText = String(localized: "Extracting frames...")
+                                self.statusText = String(localized: "Extracting frames...")
                             } else {
-                                self?.statusText = String(localized: "Generating GIF...")
+                                self.statusText = String(localized: "Generating GIF...")
                             }
                         }
                     },
-                    cancellationCheck: { [weak self] in
-                        self?.isCancelled ?? false
+                    cancellationCheck: {
+                        Task.isCancelled
                     }
                 )
 
@@ -179,7 +180,7 @@ final class ConverterViewModel {
 
     /// Cancels the ongoing conversion.
     func cancelConversion() {
-        isCancelled = true
+        conversionTask?.cancel()
     }
 
     /// Resets the state to allow a new conversion.

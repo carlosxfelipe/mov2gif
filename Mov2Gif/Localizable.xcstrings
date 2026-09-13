@@ -17,6 +17,7 @@
 
     },
     "About Mov2Gif" : {
+      "extractionState" : "stale",
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
@@ -39,6 +40,9 @@
     "Carlos Felipe Araújo" : {
 
     },
+    "Chave copiada!" : {
+
+    },
     "Choose another video" : {
       "localizations" : {
         "pt-BR" : {
@@ -48,6 +52,9 @@
           }
         }
       }
+    },
+    "Considere fazer uma contribuição via Pix" : {
+
     },
     "Conversion cancelled." : {
       "localizations" : {
@@ -99,6 +106,9 @@
         }
       }
     },
+    "Copiar chave Pix" : {
+
+    },
     "Could not create the destination GIF file." : {
       "localizations" : {
         "pt-BR" : {
@@ -128,6 +138,9 @@
           }
         }
       }
+    },
+    "Desenvolvido por" : {
+
     },
     "Developed by" : {
       "localizations" : {
@@ -210,6 +223,9 @@
       }
     },
     "github.com/carlosxfelipe" : {
+
+    },
+    "Gostou do app? %@" : {
 
     },
     "Infinite Loop" : {
@@ -346,6 +362,7 @@
       }
     },
     "Version 1.0" : {
+      "extractionState" : "stale",
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
